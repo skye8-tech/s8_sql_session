@@ -8,6 +8,6 @@ SELECT COUNT(lecturer) as "MALE_COUNT" FROM lecturer WHERE gender="MALE";
 -- select total number of distinct departments from departments table where the program is 3 years
 -- SELECT * FROM departments;
 -- SELECT DISTINCT department FROM `departments` WHERE program="3 YRS";
-SELECT COUNT(DISTINCT department) AS "DISTINCT DEPARTMENTS" FROM `departments` WHERE program="3 YRS";
+SELECT COUNT(DISTINCT department) AS "DISTINCT DEPARTMENTS" FROM `departments` WHERE program="3 YRS" OR program="3YRS" OR program="3 YEARS";
 -- returns SONIA score from the student table
 SELECT `stud nam`, `course`, `score` FROM student WHERE `stud nam` LIKE "%SONIA%";
